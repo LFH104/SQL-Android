@@ -37,7 +37,6 @@ public class CustomApp extends Application {
         liteOrm.setDebugged(true); // open the log
 
         LitePal.initialize(this);
-
         boxStore = MyObjectBox.builder().androidContext(CustomApp.this).build();
     }
 }

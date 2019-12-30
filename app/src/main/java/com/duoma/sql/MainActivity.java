@@ -358,7 +358,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 });
 
                 timeStart = System.currentTimeMillis();
-                final List<DemoObjectBox> list = boxBox.query().equal(DemoObjectBox_.userId, "222424").build().find();
+                final List<DemoObjectBox> list = boxBox.query().equal(DemoObjectBox_.userId, "222424")
+                        .build().find();
                 timeEnd = System.currentTimeMillis();
                 final long finalTime1 = timeEnd - timeStart;
                 runOnUiThread(new Runnable() {
